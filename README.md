@@ -1,1 +1,1 @@
-# Geshin
+# Genshin
