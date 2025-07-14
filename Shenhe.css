@@ -1,0 +1,130 @@
+#Container{ /*整個螢幕*/
+    width:100%;
+    height:96vh;
+}
+
+#Title{
+    display: flex;
+    top:0;
+    left:0;
+    width:100%;
+    height:15%;
+    border-bottom: 2px solid #2B509D;
+    justify-content: center;
+}
+
+#Title h1{
+    text-align: center;
+    color:#2B509D;
+}
+
+#Home{
+    cursor: pointer; /* 將鼠標類型設置為手指，以表明它是可以點擊的 */
+    font-size: 12px;
+}
+
+h3{
+    font-size: 20px;
+    color:#2B509D;
+    cursor: pointer;
+}
+
+#TitleDown{
+    bottom:0;
+    left:0;
+    width:100%;
+    height:85%;
+    display: flex;
+    flex-direction: column;             
+}
+
+#UP{
+    left:0;
+    width:100%;
+    height:50%;
+    display: flex;
+    flex-direction: row;             
+}
+
+#UPLeft{
+    left:0;
+    width:50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#UPRight{
+    right: 0;
+    width:50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;   
+}
+
+#DOWN{ /*整個螢幕左側欄位區塊*/
+    left:0;
+    width:100%;
+    height:50%;
+    display: flex;
+    flex-direction: row;             
+}
+
+#DOWNLeft{
+    left:0;
+    width:50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#DOWNRight{
+    right: 0;
+    width:50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#PopupUp , #PopupUp2, #PopupUp3, #PopupUp4{
+    display: none; /* 初始隱藏 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 使其居中 */
+    background-color: rgb(255,255,255,0.5);
+    padding: 60px;
+    border: 2px solid #2B509D;
+    z-index: 9999;
+    border-radius: 5px;
+    color: #2B509D;
+    text-align: center;
+}
+
+#Close , #Close2, #Close3 ,#Close4{
+    color: #2B509D;
+    background-color: rgb(255,255,255,0.5);
+    border: 1px solid #2B509D;
+    border-radius: 5px;
+    padding:5px;
+    cursor: pointer;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image: url('Shenhe.jpg');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:auto 100%;
+    opacity: 0.2;
+    z-index: -1;
+}

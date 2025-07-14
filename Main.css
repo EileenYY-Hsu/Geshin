@@ -1,0 +1,334 @@
+h1{
+    text-align: center;
+    color:#5563AA;
+}
+
+#Container{ /*整個螢幕*/
+    position:relative;
+    width:100%;
+    height:400px;
+    overflow: hidden;
+}
+
+#Title{ /*整個螢幕最上方標題區塊*/
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:15%;
+    border-bottom:2px solid #5563AA;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Menu{ /*整個螢幕左側欄位區塊*/
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:20%;
+    height:85%;
+    border-right:2px solid #5563AA;
+    display: flex;
+    flex-direction: column;              
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#Menu p { /*整個螢幕左側欄位區塊文字*/
+    height: 50px;
+    width: 150px;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color:#5563AA;
+}
+
+#Menu p:hover {
+    color:#8ACAF4;
+    cursor: pointer; 
+}
+
+#Content{ /*整個螢幕右側顯示區塊*/
+    position:fixed;
+    bottom:0;
+    right:0;
+    width:80%;
+    height:85%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#ChoiceStory{ /*整個螢幕右側顯示區塊(僅在劇情裡)*/
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:100%;
+}
+
+#ChoiceStoryUp{ /*整個螢幕右側顯示區塊(僅在劇情裡)的上方區塊*/
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:12%;
+    border-bottom:2px solid #5563AA;
+}
+
+#ChoiceStoryUp p { /*整個螢幕右側顯示區塊(僅在劇情裡)的上方區塊的文字*/
+    height: 50px;
+    width: 150px;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color:#5563AA;
+}
+
+#ChoiceStoryUp p:hover{ /*整個螢幕右側顯示區塊(僅在劇情裡)的上方區塊的文字*/
+    cursor: pointer;
+    color:#8ACAF4;
+}
+
+#ChoiceStoryDown {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 88%;
+    justify-content: center;
+}
+
+#ChoiceStoryDown p{ /*選擇劇情故事右下方區塊的文字*/
+    text-align: center;
+    font-size: 20px;
+    color:#5563AA;
+}
+
+#ChoiceStoryDown h3{ /*選擇劇情故事右下方區塊的標題*/
+    text-align: center;
+    font-size: 20px;
+    color:#5563AA;
+}
+
+#MChapterDown{ /*整個螢幕右側顯示區塊(僅在劇情裡--主線)的下方區塊*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: 100%;
+}
+
+#MChapterLeft{
+    display: flex;
+    width:25%;
+    align-items: center;
+    justify-content: center;
+}
+
+#MChapterRight{
+    width:75%;
+    overflow-y: scroll; /* 使右侧部分可滚动 */
+    max-height: 100%; 
+}
+
+#SChapterDown{ /*整個螢幕右側顯示區塊(僅在劇情裡--支線)的下方區塊*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: 100%;
+}
+
+#SChapterLeft{
+    display: flex;
+    width:25%;
+    align-items: center;
+    justify-content: center;
+}
+
+#SChapterRight{
+    width:75%;
+    overflow-y: scroll; /* 使右侧部分可滚动 */
+    max-height: 100%; 
+}
+
+#LChapterDown{ /*整個螢幕右側顯示區塊(僅在劇情裡--傳說任務)的下方區塊*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: 100%;
+}
+
+#LChapterLeft{
+    display: flex;
+    width:25%;
+    align-items: center;
+    justify-content: center;
+}
+
+#LChapterRight{
+    width:75%;
+    overflow-y: scroll; /* 使右侧部分可滚动 */
+    max-height: 100%; 
+}
+
+#IChapterDown{ /*整個螢幕右側顯示區塊(僅在劇情裡--邀約任務)的下方區塊*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: 100%;
+}
+
+#IChapterLeft{
+    display: flex;
+    width:25%;
+    align-items: center;
+    justify-content: center;
+}
+
+#IChapterRight{
+    width:75%;
+    overflow-y: scroll; /* 使右侧部分可滚动 */
+    max-height: 100%; 
+}
+
+
+select{
+    font-size: 16px;
+    color: #5563AA;
+    background-color: #CBDAEC;
+    border: none; /*不要有框*/
+    border-radius: 5px;
+    padding:5px;
+}
+
+#CardPool {
+    display: flex;
+    width: 80%; /* 設定表格寬度為80% */
+    border-collapse: collapse;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#CardPool td {
+    padding: 20px;
+}
+
+#Version{
+    color:#5563AA;
+    font-size: 20px;
+}
+
+.selectedImage {
+    width: 80%;
+    height: auto;
+}
+
+#tablerightdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MChapterDown {
+    position: relative; /* 容器相對定位 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+}
+
+.imageText {
+    display: none; /* 文字初始隱藏 */
+    position: absolute; /* 容器相對定位 */
+    font-size: 16px;
+    background-color: rgb(203,218,236,0.5); /* 0.5=半透明 */
+    color: rgb(85,99,170);
+    border:1px solid #5563AA;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#areaText1 {
+    display: none;
+}
+
+#areaText2 {
+    display: none;
+}
+
+#areaText3 {
+    display: none;
+}
+
+#areaText4 {
+    display: none;
+}
+
+#areaText5 {
+    display: none;
+}
+
+#selectedImage2{ /*地圖圖片大小*/
+    width: auto;
+    height: 80%;
+}
+
+#RoleCardDown{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+#Image img{
+    height:250px;
+    cursor: pointer;
+}
+
+.RoleNameText {
+    display: none; /* 文字初始隱藏 */
+    position: absolute; /* 容器相對定位 */
+    font-size: 16px;
+    background-color: rgb(203,218,236,0.5); /* 0.5=半透明 */
+    color: rgb(85,99,170);
+    border:1px solid #5563AA;
+    padding: 5px;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image: url('gemini.jpg');
+    background-repeat:no-repeat;
+    background-position: center;
+    opacity: 0.2;
+    z-index: -1;
+}
