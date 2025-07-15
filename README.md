@@ -17,6 +17,7 @@ A static website made with pure HTML, CSS and JavaScript, showing the game intro
 - JavaScript
   - **DOM Manipulation**(getElementById, addEventListener, innerHTML, style.display, style.top/left)
   - **Event Handling**(click, change, mousemove, mouseover / mouseout)
+    ![Screenshot](images/mousemove_code.png)
   - **Dropdown & Dynamic Image Display**
   - **Conditional Display**
   - **Navigation**(window.location.href)
