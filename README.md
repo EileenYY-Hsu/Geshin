@@ -27,3 +27,6 @@ A static website made with pure HTML, CSS and JavaScript, showing the game intro
 - Clean and structured layout using Flexbox
 - Built with pure HTML/CSS, no external frameworks
 - Fully static and lightweight
+## Project Motivation
+I am particularly interested in user interface and front-end visual design. Through this project, I explored fundamental UI principles such as color coordination, font selection, and layout structure.
+Although this is a lightweight project, it serves as a complete and representative example in my portfolio, demonstrating my understanding of the web development process and structural logic.
