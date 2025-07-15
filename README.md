@@ -6,21 +6,21 @@ A static website made with pure HTML, CSS and JavaScript, showing the game intro
 - HTML5
 - CSS3
   - **Responsive Layout with Flexbox**
-    - Implemented flexible and responsive UI layouts using `flex-direction`, `justify-content`, and `align-items`.
-    - Managed multi-section layout (title, sidebar, content) using `position: fixed` and `flex` containers.
-  - Component Styling
-    - Designed interactive buttons and text elements with hover effects.
-    - Styled custom dropdown menu with `select`, `option`, and `border-radius`.
-  - Tooltip Design
-    - Custom tooltip boxes using `position: absolute`, semi-transparent background (`rgba`), and precise offset logic.
-  - Scroll and Overflow Handling
-    - Applied `overflow-y: scroll` with `max-height` to handle long content gracefully.
-  - Background and Imagery
-    - Background image added using `::before` pseudo-element with `opacity` for soft visual effect.
-    - Maintained image aspect ratio using `width: auto` and `height` limits.
-  - Typography and Color Scheme
-    - Consistent use of color palette (`#5563AA`, `#8ACAF4`) for thematic consistency.
-    - Centralized text alignment and scalable font sizing for clear readability.
+    - Built flexible layouts using flex-direction, justify-content, and align-items.
+    - Arranged fixed title, sidebar, and content with Flexbox.
+  - **Component Styling**
+    - Added hover effects to buttons and texts.
+    - Customized dropdowns with border-radius and styling.
+  - **Tooltip Design**
+    - Used position: absolute and semi-transparent rgba backgrounds for floating tooltips.
+  - **Scroll and Overflow Handling**
+    - Enabled vertical scrolling with overflow-y and limited height via max-height.
+  - **Background and Imagery**
+    - Applied a soft background using ::before with opacity.
+    - Ensured image responsiveness with flexible width and height.
+  - **Typography and Color Scheme**
+    - Unified design with a consistent color palette.
+    - Used centered alignment and scalable fonts for clarity.
 - JavaScript
   - DOM Manipulation(getElementById, addEventListener, innerHTML, style.display, style.top/left)
   - Event Handling(click, change, mousemove, mouseover / mouseout)
