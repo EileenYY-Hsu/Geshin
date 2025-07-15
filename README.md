@@ -6,7 +6,7 @@ A static website made with pure HTML, CSS and JavaScript, showing the game intro
 - HTML5
   - **Layout Divisions**(#Container, #Title, #Menu, #Content)
   - **DOM Manipulation**(id="Story"-->getElementById())
-    ![Screenshot](images/narrative.png)
+    ![Screenshot](images/narrative_code.png)
 - CSS3
   - **Responsive Layout with Flexbox**(lex-direction, justify-content, and align-items.)
   - **Component Styling**(border-radius)
