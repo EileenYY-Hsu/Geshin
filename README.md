@@ -22,3 +22,8 @@ A static website made with pure HTML, CSS and JavaScript, showing the game intro
     ![Screenshot](images/storyquest_code.png)
   - **Conditional Display**
   - **Navigation**(window.location.href)
+## Key Features
+- Genshin Impact themed character showcase site
+- Clean and structured layout using Flexbox
+- Built with pure HTML/CSS, no external frameworks
+- Fully static and lightweight
