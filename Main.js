@@ -2,7 +2,7 @@ const StoryContent = `
     <div id="ChoiceStory">
         <div id="ChoiceStoryUp">
             <p id="MainStory">Archon Quest</p>
-            <p id="SideStory">支線</p> 
+            <p id="SideStory">World Quest</p> 
             <p id="LegendStory">Story Quest</p>
             <p id="InvitationStory">Hangout Event</p>
         </div>   
@@ -16,18 +16,18 @@ const MainStoryOption = `
     <div id="MChapterDown">
         <div id="MChapterLeft">
             <select id="MChapter">
-                <option value="Plot1">劇情</option>
-                <option value="Setup1">遊戲設定</option>
-                <option value="Mondstadt1">蒙德篇</option>
-                <option value="Liyue1">璃月篇</option>
-                <option value="Inazuma1">稻妻篇</option>
-                <option value="Sumeru1">須彌篇</option>
-                <option value="Fontaine1">楓丹篇</option>
+                <option value="Plot1">Campaign</option>
+                <option value="Setup1">Setting and characters</option>
+                <option value="Mondstadt1">Mondstadt</option>
+                <option value="Liyue1">Liyue</option>
+                <option value="Inazuma1">Inazuma</option>
+                <option value="Sumeru1">Sumeru</option>
+                <option value="Fontaine1">Fontaine</option>
             </select>
         </div>
         <div id="MChapterRight">
-        <h3>劇情概述</h3>
-            <p>「空」和「熒」是在星海中結伴的旅行者，降臨在提瓦特後便目睹了坎瑞亞的滅亡，決定離開提瓦特之時被「天理的維繫者」阻攔並被封印，因而雙子失散。其中一位（玩家所扮演的角色，一般直接以「旅行者」代稱）在沉睡500年後醒來，為了尋找血親，踏上了周遊提瓦特七國的旅途。</p>
+        <h3>Synopsis</h3>
+            <p>"Sora" and "Ying" are travelers who travel together in the sea of stars. After arriving in Teyvat, they witnessed the demise of Kanrea. When they decided to leave Teyvat, they were blocked and sealed by the "Maintainer of Heaven's Law", and thus the twins were separated. One of them (the character played by the player, usually directly referred to as "Traveler") woke up after sleeping for 500 years, and in order to find his blood relatives, he embarked on a journey around the seven countries of Teyvat.</p>
         </div>
     </div>
 `;
@@ -36,34 +36,34 @@ const SideStoryOption = `
     <div id="SChapterDown">
         <div id="SChapterLeft">
             <select id="SChapter">
-                <option value="Mondstadt2">蒙德</option>
-                <option value="Liyue2">璃月</option>
-                <option value="Inazuma2">稻妻</option>
-                <option value="Sumeru2">須彌</option>
-                <option value="Fontaine2">楓丹</option>
+                <option value="Mondstadt2">Mondstadt</option>
+                <option value="Liyue2">Liyue</option>
+                <option value="Inazuma2">Inazuma</option>
+                <option value="Sumeru2">Sumeru</option>
+                <option value="Fontaine2">Fontaine</option>
             </select>
         </div>
         <div id="SChapterRight">
-            <h3>蒙德</h3>
-            <p>1.輕飄飄的花與芙蘿拉</p>
-            <p>2.風神與蒙德</p>
-            <p>3.風起風息</p>
-            <p>4.騎士團手冊問答</p>
-            <p>5.等量交換</p>
-            <p>6.風暴後遺症</p>
-            <p>7.捕盜</p>
-            <p>8.風後寶礦</p>
-            <p>9.酒莊大掃除</p>
-            <p>10.善後工作</p>
-            <p>11.探索劍塚封印</p>
-            <p>12.時與風</p>
-            <p>13.山中之物</p>
-            <p>14.腐殖之牙</p>
-            <p>15.雪山大勘測</p>
-            <p>16.雪山再勘測</p>
-            <p>17.啊，新鮮的肉</p>
-            <p>18.覆雪之國</p>
-            <p>19.雪山迷蹤</p>
+            <h3>Mondstadt</h3>
+            <p>1.Flighty Flora... and Flora</p>
+            <p>2.Mondstadt and Its Archon</p>
+            <p>3.Windrise, Windfall</p>
+            <p>4.Question and Answer</p>
+            <p>5.Equivalent Exchange</p>
+            <p>6.Lingering Malady</p>
+            <p>7.Thief-Catcher</p>
+            <p>8.After the Storm</p>
+            <p>9.Cleanup At Dawn</p>
+            <p>10.In the Aftermath</p>
+            <p>11.Break the Sword Cemetery Seal</p>
+            <p>12.Time and Wind</p>
+            <p>13.In the Mountains</p>
+            <p>14.The Festering Fang</p>
+            <p>15.The Great Mountain Survey</p>
+            <p>16.The Great Mountain Survey Ⅱ</p>
+            <p>17.Ah, Fresh Meat!</p>
+            <p>18.A Land Entombed</p>
+            <p>19.Lost in the Snow</p>
         </div>
     </div>
 `;
@@ -72,15 +72,15 @@ const LegendStoryOption = `
     <div id="LChapterDown">
         <div id="LChapterLeft">
             <select id="LChapter">
-                <option value="Mondstadt3">Mondstadt 5-Star Role</option>
-                <option value="Liyue3">Liyue 5-Star Role</option>
-                <option value="Inazuma3">Inazuma 5-Star Role</option>
-                <option value="Sumeru3">Sumeru 5-Star Role</option>
-                <option value="Fontaine3">Fontaine 5-Star Role</option>
+                <option value="Mondstadt3">Mondstadt 5-Star Characters</option>
+                <option value="Liyue3">Liyue 5-Star Characters</option>
+                <option value="Inazuma3">Inazuma 5-Star Characters</option>
+                <option value="Sumeru3">Sumeru 5-Star Characters</option>
+                <option value="Fontaine3">Fontaine 5-Star Characters</option>
             </select>
         </div>
         <div id="LChapterRight">
-            <h3>Mondstadt 5-Star Role</h3>
+            <h3>Mondstadt 5-Star Characters</h3>
             <p>Pyro：Diluc Noctua Chapter</p>
             <p>Pyro：Klee Trifolium Chapter</p>
             <p>Anemo：Jean Leo Minor Chapter</p>
@@ -96,21 +96,20 @@ const InvitationStoryOption = `
     <div id="IChapterDown">
         <div id="IChapterLeft">
             <select id="IChapter">
-                <option value="Mondstadt4">蒙德四星角色</option>
-                <option value="Liyue4">璃月四星角色</option>
-                <option value="Inazuma4">稻妻四星角色</option>
-                <option value="Sumeru4">須彌四星角色</option>
-                <option value="Fontaine4">楓丹四星角色</option>
+                <option value="Mondstadt4">Mondstadt 4-Star Characters</option>
+                <option value="Liyue4">Liyue 4-Star Characters</option>
+                <option value="Inazuma4">Inazuma 4-Star Characters</option>
+                <option value="Sumeru4">Sumeru 4-Star Characters</option>
+                <option value="Fontaine4">Fontaine 4-Star Characters</option>
             </select>
         </div>
         <div id="IChapterRight">
-            <h3>蒙德四星角色</h3>
-            <p>火系：班尼特 第一幕 美妙旅程</p>
-            <p>水系：芭芭拉 第一幕 治癒的清泉</p>
-            <p>岩系：諾艾爾 第一幕 騎士修行之道</p>
-            <p>岩系：諾艾爾 第二幕 騎士備考之道</p>
-            <p>冰系：迪奧娜 第一幕 貓與特調酒</p>
-            <p>冰系：凱亞 第一幕 鬼話與甜酒</p>
+            <h3>Mondstadt 4-Star Characters</h3>
+            <p>Pyro：Bennett Fantastic Voyage</p>
+            <p>Hydro：Barbara Wellspring of Healing</p>
+            <p>Geo：Noelle Chivalric Training</p>
+            <p>Cryo：Diona The Cat and the Cocktail</p>
+            <p>Cryo：Kaeya Shenanigans and Sweet Wine</p>
         </div>
     </div>
 `;
@@ -179,248 +178,200 @@ const RoleContent = `
 
 const articles1 = {
     Plot1: ` 
-        <h3>劇情概述</h3>
-        <p>「空」和「熒」是在星海中結伴的旅行者，降臨在提瓦特後便目睹了坎瑞亞的滅亡，決定離開提瓦特之時被「天理的維繫者」阻攔並被封印，因而雙子失散。其中一位（玩家所扮演的角色，一般直接以「旅行者」代稱）在沉睡500年後醒來，為了尋找血親，踏上了周遊提瓦特七國的旅途。</p>
+        <h3>Synopsis</h3>
+        <p>"Sora" and "Ying" are travelers who travel together in the sea of stars. After arriving in Teyvat, they witnessed the demise of Kanrea. When they decided to leave Teyvat, they were blocked and sealed by the "Maintainer of Heaven's Law", and thus the twins were separated. One of them (the character played by the player, usually directly referred to as "Traveler") woke up after sleeping for 500 years, and in order to find his blood relatives, he embarked on a journey around the seven countries of Teyvat.</p>
     `,
     Setup1: `
-        <h3>遊戲設定</h3>
-        <p>《原神》設定在名為「提瓦特」的幻想世界中。提瓦特總共分為七個主要國家，分別由掌管不同元素和理念的神祇（稱為「塵世七執政」）統治，各國政治形態亦不盡相同。懸於提瓦特天空之上的「天空島」，是包括「天理」在內的更高位階神祇的居所，也是擁有強大願望之人成神後的去處。在提瓦特大陸的地底埋藏著被「天理」覆滅的古國「坎瑞亞」的遺蹟。不同於與神同行的七國，坎瑞亞並不是由神祇統治，而是由人類建立和自治的國家。提瓦特過去有過權力更替，遠古由執掌七種元素的七位「龍王」統治，後來陸續有來自世界之外的「降臨者」來到提瓦特，前兩位降臨者被稱為「第一王座」和「第二王座」。「第一王座」即為「天理」，祂打敗了七龍王，將他們的「古龍大權」奪走，分派給了「塵世七執政」，這些權能後來被稱為「神座」。倖存的七龍王，有些存世，有些轉生。</p>
-        <p>當一個人強大的願望獲得「天理」的注意，七神受「天理」指示，就會給予認可之人自己「神座」的部分力量，具象化為法器「神之眼」。「神之眼」給予使用者驅動某一元素之能；同時，此人也獲得了登上天空島成神的資格，稱為「原神」。除了「神之眼」外，至冬國的特務機構「愚人眾」也研發出了另一法器「邪眼」，由逝去魔神的遺骸殘渣製成，可以透過投餵生命力來獲得驅動元素之能。塵世七執政則憑藉「神之心」與天空島保持聯繫，並藉由「神之心」增幅元素權能以治理國家。</p>
-        <p>遊戲的主人公是「旅行者」和派蒙。「旅行者」和其雙胞胎血親來自世界之外的寰宇，在遊戲劇情之初被迫分離，因此「旅行者」不得不踏上於提瓦特大陸尋找血親之旅。「旅行者」為提瓦特大陸的第四降臨者。玩家可以在「空」和「熒」中選擇一人扮演「旅行者」，另一人則為其血親；除了「空」和「熒」之一，「旅行者」另有在提瓦特通行的名字，此名字由玩家自訂。派蒙則為「旅行者」在遊戲劇情之初結識的夥伴和旅行中的嚮導。</p>
-        <p>遊戲中主要的反派陣營包括：「深淵教團」，由來自坎瑞亞的魔物和受詛咒的坎瑞亞民組成，意圖推翻七神統治；以及「愚人眾」，至冬國的外交、軍事和特務機構，在七國遍佈橫行，為冰神收集「神之心」。「旅行者」的血親被深淵教團尊為領導人（「公主殿下」或「王子殿下」）；而愚人眾則由十一位「執行官」代行冰神的權能和意志。</p>
+        <h3>Setting and characters</h3>
+        <p>Genshin Impact takes place in the world of Teyvat, composed of seven major nations, each of which is ruled by a different god called an "Archon", tied to a different element and ideal, and governed by a specific faction. The mysterious floating island of Celestia hangs above Teyvat, allegedly home to gods, as well as mortals who have ascended to godhood through great, heroic feats. Underground lie the ruins of Khaenri'ah, a mysterious nation which was destroyed by Celestia 500 years before the main events of the game. Unlike the seven nations, Khaenri'ah was not ruled over by a god, and sought to create a civilization led solely by humans.</p>
+        <p>Irrespective of which nation they hail from, individuals who have great ambitions may be granted a Vision, a magical gemstone that allows them to control a specific element and gives them the potential to ascend to godhood and reside in Celestia. Others may achieve elemental manipulation through Delusions, artificial Visions made from the remains of powerful gods which allow their bearers to control elements by feeding off their vitality. Archons, on the other hand, possess a Gnosis, which is a device similar to a Vision that affirms their authority as an Archon and allows them to "resonate" with Celestia</p>
+        <p>The protagonists are the Traveler and Paimon, the Traveler's guide and companion. The Traveler and their twin sibling travel across worlds in the universe before being separated in Teyvat, forcing the Traveler to go on a journey to find them. The player may choose to play as either Aether (the brother) or Lumine (the sister), though their account username is used throughout most of the game.</p>
+        <p>The primary antagonists in the game are the Abyss Order, a legion of monsters made up of corrupted Khaenri'ahns who seek to overthrow the rule of the Archons, and the Fatui, a military force and delegation of diplomats from Snezhnaya who pursue an aggressive foreign policy throughout Teyvat. The Traveler's lost twin is respected as the leader of the Abyss Order, while the Fatui are led by the Eleven Harbingers, the powerful lieutenants of the Tsaritsa who have been given special authority to carry out her will. Some Harbingers take a moderate diplomatic stance, while others are hardliners in their dealings with other nations.</p>
     `,
     Mondstadt1: ` 
-        <h3>蒙德篇 捕風的異鄉人</h3>
-        <p>旅行者來到自由之國蒙德後恰逢風魔龍特瓦林在深淵教團的蠱惑下想要毀滅蒙德，旅行者與溫迪、西風騎士團代理團長琴、迪盧克等人最終拯救了特瓦林，化解了這次危機，同時得知溫迪的真實身分是蒙德的統治者風神巴巴托斯，但返回途中組織愚人眾的執行官「女士」突然出現奪走了溫迪的「神之心」。</p>
+        <h3>Mondstadt The Outlander Who Caught the Wind</h3>
+        <p>Aether and Lumine, a pair of twins who travel across different worlds, land in Teyvat. Witnessing the destruction of Khaenri'ah upon their arrival, the two attempt to flee, but they soon find their path blocked by a mysterious god who calls herself the "Sustainer of Heavenly Principles". She separates the twins, sealing the playable character away for five hundred years. When the sealed sibling, now called "The Traveler", wakes up, they meet a small fairy-like being named Paimon, who becomes their companion and travel guide. The two set off on a journey across Teyvat to gather information about their lost twin from each nation's ruling Archon.The Traveler and Paimon arrive in Mondstadt, only to find it being terrorized by a dragon called Stormterror. They work together with the Knights of Favonius to resolve the problem. They meet a carefree bard named Venti and learn that Stormterror – whose real name is Dvalin – is Venti's friend and has been corrupted by the Abyss Order. Venti reveals himself to be Barbatos, the Anemo Archon, and purifies Dvalin with help from the Traveler. After solving the crisis, Venti and the Traveler are ambushed by La Signora, the Eighth Fatui Harbinger, who steals Venti's Gnosis. After recovering, Venti suggests the Traveler to attend the Rite of Descension in Liyue as they will have to wait a whole year should they miss.</p>
     `,
     Liyue1: `
-        <h3>璃月篇 辭行久遠之軀</h3>
-        <p>旅行者在溫迪的建議下前往契約之國璃月尋找岩王帝君，岩王帝君卻在「請仙典儀」上遇害仙隕。旅行者被千岩軍懷疑，於是前往望舒客棧尋找三眼五顯仙人尋求公道，之後又與往生堂客卿鍾離準備送仙的各種用具。仙人與代理執政的璃月七星衝突升級，愚人眾執行官「公子」趁機召喚出被封印的魔神奧賽爾襲擊璃月港，旅行者在璃月七星及仙人的幫助下與奧賽爾作戰，最終凝光將其懸浮在空中的住所「群玉閣」砸下，再次封印了奧賽爾。風波結束後，旅行者得知鍾離就是岩神摩拉克斯，岩王帝君仙隕只是自己策劃的假死事件，並依照與冰神訂立的「終結一切契約的契約」將「神之心」交予「女士」。</p>
+        <h3>Liyue Farewell, Archaic Lord</h3>
+        <p>The Traveler and Paimon go to Liyue Harbor to attend a ritual for Rex Lapis, the Geo Archon, only for him to descend lifeless from the sky. They are assisted by Wangsheng Funeral Parlor consultant Zhongli and the Eleventh Fatui Harbinger, Tartaglia, in performing a rite of farewell for the Archon. However, Tartaglia betrays them in the end and attempts to steal Rex Lapis's Gnosis, but is stopped by the Traveler. Tartaglia summons the ancient serpent god Osial to attack Liyue, but the adepti and humans successfully defend the city. Later, the Traveler learns that Zhongli is actually Rex Lapis and that he has retired as an Archon, exchanging his Gnosis with La Signora in an undisclosed contract with the Tsaritsa, the Cryo Archon, to end all contracts.</p>
     `,
     Inazuma1: ` 
-        <h3>稻妻篇 千手百眼天下人間</h3>
-        <p>旅行者經由北斗的船隊突破雷暴抵達永恆之國稻妻，希望見到統治者雷電將軍，卻得知幕府正在推行「眼狩令」，旅行者突襲救下因持有「神之眼」而被逮捕的托馬並在被雷電將軍打敗後與托馬共同逃離，接著前往稻妻的反抗軍營地，透過八重神子的鍛鍊和神里家的支援，旅行者在決鬥中成功戰勝了在稻妻策劃陰謀的「女士」，接著在反抗軍的配合下與雷電將軍的真身「影」交手，成功獲勝並說服她廢除眼狩令，最後卻得知「神之心」已被愚人眾執行官「散兵」帶走。</p>
+        <h3>Inazuma Omnipresence Over Mortals</h3>
+        <p>The Traveler and Paimon sail to the isolationist nation of Inazuma, only to learn that the Raiden Shogun, the nation's Archon, has been confiscating Inazumans' Visions as part of the Vision Hunt Decree. After barely escaping the Shogun's forces, the Traveler and Paimon join a band of separatists in Inazuma's Watatsumi Island before meeting Scaramouche, the Sixth Fatui Harbinger. Though he knocks them unconscious, Yae Miko – the Shogun's familiar – gives him the Electro Gnosis in exchange for their lives. After recovering, the Traveler learns from Miko that they met Raiden Ei, the true Electro Archon who dwells within her inner world, and Kujou Takayuki, head of the Kujou Clan, betrayed the Shogunate. After exposing the Kujou Clan's collaboration with the Fatui, the Traveler returns and challenges La Signora to a duel, which she accepts. The Traveler then defeats La Signora, who is subsequently executed by the Shogun. The Traveler then battles and defeats Raiden Ei with Miko's help and convinces her to repeal her restrictive policies.</p>
     `,
     Sumeru1: ` 
-        <h3>須彌篇 虛空劫灰往世書</h3>
-        <p>旅行者前往智慧之國須彌尋找小吉祥草王，卻誤入了由實際統治須彌的教令院在須彌城所製造的循環夢境，最終與須彌神明納西妲等人一同打破迴圈，將須彌民眾從夢境中解放出來。在旅行者與納西妲聯手調查下，教令院「造神」的陰謀逐漸浮出水面，但途中被愚人眾執行官「博士」出手干預，並斷絕了納西妲與外界的聯絡。旅行者與眾人深入沙漠，在赤王陵中揭開了草神、花神和赤王的歷史。接著又與眾人制定反攻計畫救出納西妲，擊敗「散兵」並奪回「神之心」，挫敗了教令院與愚人眾的陰謀，重獲自由的納西妲以「神之心」作為交易換取「博士」摧毀自己全部切片以及提瓦特大陸真相的「秘密」，並從教令院手上接掌統治權。</p>
+        <h3>Sumeru Truth Amongst the Pages of Purana.</h3>
+        <p>The Traveler and Paimon continue their search for answers in Sumeru by seeking an audience with Lesser Lord Kusanali, the Dendro Archon. However, they are unable to speak with her due to her imprisonment by the Akademiya. The Traveler eventually meets her human vessel, Nahida, within a dream, and discovers that the Akademiya's sages have partnered with Il Dottore, the Second Fatui Harbinger, to overthrow Kusanali and install Scaramouche as an artificial god. With the help of key individuals in Sumeru, the Traveler thwarts the sages' plot, rescues Kusanali, and defeats Scaramouche. They then meet Greater Lord Rukkhadevata, whom Kusanali has to erase from existence to purify Irminsul. This causes everyone on Teyvat, with the exception of the Traveler, to lose all their memories of Rukkhadevata ever existing.</p>
     `,
     Fontaine1: ` 
-        <h3>楓丹篇 罪人舞步旋</h3>
-        <p>旅行者前往正義之國楓丹，解決了當地魔術師林尼與其助手琳妮特的魔術中的殺人案。隨後，旅行者發現能將楓丹人溶解的「原始胎海之水」，並以此為線索調查了數年前的案件「少女連環失蹤案」。最終該案真正兇手瓦謝被旅行者指控後，抑鬱而死。數日後，旅行者應那維萊特的請求前往楓丹監獄梅洛彼德堡與林尼一同調查。在一段時間的生活後旅行者開始與當地的實際管理者萊歐斯利交涉，並發現了梅洛彼德堡下方的「原始胎海」。在其中的水爆發之際，那維萊特前往此地將其鎮壓。隨後發生了多次原始胎海之水爆發事故，旅行者等人懷疑芙寧娜並非真正的神明，於是發起了對她的審判。隨後旅行者得知了真正的水神芙卡洛斯創造了芙寧娜偽裝水神並遭受痛苦從而欺騙天理拯救楓丹居民的事實。在審判中，機關「諭示裁定樞機」將芙卡洛斯處死，那維萊特繼承其權能，並使楓丹人不會溶解於原始胎海之水。</p>
+        <h3>Fontaine Masquerade of the Guilty</h3>
+        <p>The Traveler and Paimon trek to Fontaine to meet Focalors, the Hydro Archon, also known as Lady Furina. They learn of the circulating prophecy that Fontaine would be flooded, leaving only the Hydro Archon weeping on her throne. The Traveler and Paimon become entangled in a case of serial killings and discover that a mysterious substance known as Primordial Seawater can dissolve Fontainians into water should they expose at high contraction. Amidst the concerns of Primordial Seawater flooding, Furina is revealed to be a cursed human instead of an Archon, split from Focalors' divinity as she worked to overturn the prophecy – a punishment for Egeria, the previous Hydro Archon, who had created humans using the power of Primordial Seawater without Celestia's permission. Having accumulated enough Indemnitium (power), Focalors executes herself, destroying the Hydro Archon's divine throne and thus restoring power to Neuvillette, the Hydro Dragon, who saves the Fontainians from the prophecy by turning them into true humans, preventing them from being dissolved.After the flood recedes, Furina abdicates from her role as Hydro Archon and leaves the related affairs to Neuvillette before leaving the Opera.</p>
     `,
 };
 
 const articles2 = {
     Mondstadt2: ` 
-        <h3>蒙德</h3>
-        <p>1.輕飄飄的花與芙蘿拉</p>
-        <p>2.風神與蒙德</p>
-        <p>3.風起風息</p>
-        <p>4.騎士團手冊問答</p>
-        <p>5.等量交換</p>
-        <p>6.風暴後遺症</p>
-        <p>7.捕盜</p>
-        <p>8.風後寶礦</p>
-        <p>9.酒莊大掃除</p>
-        <p>10.善後工作</p>
-        <p>11.探索劍塚封印</p>
-        <p>12.時與風</p>
-        <p>13.山中之物</p>
-        <p>14.腐殖之牙</p>
-        <p>15.雪山大勘測</p>
-        <p>16.雪山再勘測</p>
-        <p>17.啊，新鮮的肉</p>
-        <p>18.覆雪之國</p>
-        <p>19.雪山迷蹤</p>
+        <h3>Mondstadt</h3>
+        <p>1.Flighty Flora... and Flora</p>
+        <p>2.Mondstadt and Its Archon</p>
+        <p>3.Windrise, Windfall</p>
+        <p>4.Question and Answer</p>
+        <p>5.Equivalent Exchange</p>
+        <p>6.Lingering Malady</p>
+        <p>7.Thief-Catcher</p>
+        <p>8.After the Storm</p>
+        <p>9.Cleanup At Dawn</p>
+        <p>10.In the Aftermath</p>
+        <p>11.Break the Sword Cemetery Seal</p>
+        <p>12.Time and Wind</p>
+        <p>13.In the Mountains</p>
+        <p>14.The Festering Fang</p>
+        <p>15.The Great Mountain Survey</p>
+        <p>16.The Great Mountain Survey Ⅱ</p>
+        <p>17.Ah, Fresh Meat!</p>
+        <p>18.A Land Entombed</p>
+        <p>19.Lost in the Snow</p>
     `,
     Liyue2: `
-        <h3>璃月</h3>
-        <p>1.冒險家…該幹嘛？</p>
-        <p>2.重岩之意</p>
-        <p>3.璃月港平靜的一天</p>
-        <p>4.黑岩之困</p>
-        <p>5.海上盛珠鈿</p>
-        <p>6.孤艦履孤雲</p>
-        <p>7.工作迫近</p>
-        <p>8.承仙所託</p>
-        <p>9.冒險家協會的諸多事宜</p>
-        <p>10.必要手續</p>
-        <p>11.書抵萬金</p>
-        <p>12.暢暢和她的小夥伴</p>
-        <p>13.南天門之謎</p>
-        <p>14.此詩送此城</p>
-        <p>15.永無止盡的研究</p>
-        <p>16.獨木難支</p>
-        <p>17.寶藏歸離</p>
-        <p>18.孤木孑立，無林可依</p>
-        <p>19.舊味難尋</p>
-        <p>20.林中小書</p>
-        <p>21.懷寶應自珍</p>
-        <p>22.古云有「螭」</p>
-        <p>23.暫行之策</p>
-        <p>24.大生意</p>
-        <p>25.夜叉之願</p>
-        <p>26.靖世九柱</p>
-        <p>27.靈矩有寶予何人</p>
-        <p>28.循仙蹤兮天遒</p>
-        <p>29.遊戲一場</p>
-        <p>30.淥華景畫</p>
-        <p>31.海上拾玉</p>
-        <p>32.群玉閣…再現？</p>
-        <p>33.暫留此影</p>
-        <p>34.完美留影</p>
-        <p>35.天遒寶跡</p>
-        <p>36.恨繁囿兮作土</p>
-        <p>37.身後事，銅雀之跡</p>
-        <p>38.身後事，諸事平安</p>
-        <p>39.身後事，歸於山中</p>
-        <p>40.巧瞞七星解磐鍵</p>
-        <p>41.靈石何故墮此間</p>
-        <p>42.潛身敵營無人知</p>
-        <p>43.岩巔大俠往事</p>
-        <p>44.千年千岩</p>
-        <p>45.物歸原主又歸原主</p>
-        <p>46.藏石者言</p>
-        <p>47.失蹤的礦工</p>
-        <p>48.臺上臺下</p>
-        <p>49.水土暫服</p>
-        <p>50.故事繁多的翹英莊</p>
-        <p>51.契約之砂</p>
-        <p>52.雲雲椒椒</p>
-        <p>53.沉玉之旅</p>
-        <p>54.仙人遊莊</p>
-        <p>55.攸望三疊</p>
-        <p>56.秘谷俠隱</p>
+        <h3>Liyue</h3>
+        <p>1.What Do Adventurers Do Again?</p>
+        <p>2.Will of Stone</p>
+        <p>3.A Quiet Day in Liyue Harbor</p>
+        <p>4.Blackcliff Woes</p>
+        <p>5.The Ocean Pearl</p>
+        <p>6.A Lone Ship In Guyun</p>
+        <p>7.Pressing Deadlines</p>
+        <p>8.An Adeptal Summons</p>
+        <p>9.The Adventurers' Guild's Affairs</p>
+        <p>10.Necessary Procedures</p>
+        <p>11.Words Worth Their Weight in Mora</p>
+        <p>12.Changchang's Little Friend</p>
+        <p>13.The Secret of Nantianmen</p>
+        <p>14.An Ode to Yonder City</p>
+        <p>15.Endless Research</p>
+        <p>16.Overstretched</p>
+        <p>17.Treasure Lost, Treasure Found</p>
+        <p>18.The Tree who Stands Alone</p>
+        <p>19.Old Tastes Die Hard</p>
+        <p>20.Book in the Woods</p>
+        <p>21.Share Not Your Treasures</p>
+        <p>22.The Chi of Yore</p>
+        <p>23.A Provisional Arrangement</p>
+        <p>24.Big Business</p>
+        <p>25.The Yaksha's Wish</p>
+        <p>26.Nine Pillars of Peace</p>
+        <p>27.And This Treasure Goes To...</p>
+        <p>28.Trails in Tianqiu</p>
+        <p>29.A Little Game</p>
+        <p>30.Luhua Landscape</p>
+        <p>31.Fishing For Jade</p>
+        <p>32.Return of the Jade Chamber?</p>
+        <p>33.Snapshots</p>
+        <p>34.Perfect Shot</p>
+        <p>35.Tianqiu Treasure Trail</p>
+        <p>36.There's no restoring this past land of beauty</p>
+        <p>37.Hereafter: The Trail of Pervases</p>
+        <p>38.Hereafter: All is Well</p>
+        <p>39.Hereafter: Return to the Mountains</p>
+        <p>40.Surreptitious Seven-Star Seal Sundering</p>
+        <p>41.Whence Did the Spiritstone Descend?</p>
     `,
     Inazuma2: ` 
-        <h3>稻妻</h3>
-        <p>1.在他鄉</p>
-        <p>2.諸國遊記</p>
-        <p>3.全能美食隊．尋食之旅</p>
-        <p>4.全能美食隊．吃飽的重要性</p>
-        <p>5.海的那頭是故鄉</p>
-        <p>6.神明啊，我做得對嗎？</p>
-        <p>7.洗刷恥辱的一戰</p>
-        <p>8.「八重堂」的邀約</p>
-        <p>9.千里之信</p>
-        <p>10.千里之信</p>
-        <p>11.凱瑟琳，在稻妻</p>
-        <p>12.離島之路</p>
-        <p>13.栽種大法</p>
-        <p>14.廣海的守望</p>
-        <p>15.《第七個武士》</p>
-        <p>16.全能美食隊！</p>
-        <p>17.踏鞴物語．終幕</p>
-        <p>18.醫櫻</p>
-        <p>19.刀劍成夢</p>
-        <p>20.神櫻大祓．影向袚行</p>
-        <p>21.農民的寶藏</p>
-        <p>22.遠呂羽氏遺事．其五</p>
-        <p>23.孤島診療譚</p>
-        <p>24.執望三千里</p>
-        <p>25.武者的宿命</p>
-        <p>26.清籟逐雷記</p>
-        <p>27.清籟舊憶</p>
-        <p>28.「海祇之心」</p>
-        <p>29.海淵仙草靈驗記</p>
-        <p>30.三隅道大演武</p>
-        <p>31.孤獨的海獸</p>
-        <p>32.故事構思法</p>
-        <p>33.鳴神尋蹤</p>
-        <p>34.肥料…推銷員</p>
-        <p>35.日輪與菅名山</p>
-        <p>36.健忘大王歷險記</p>
-        <p>37.門戶清理</p>
-        <p>38.龍蛇洞宮試煉記</p>
-        <p>39.食蓮者</p>
-        <p>40.法厄同們全跳舞</p>
-        <p>41.止水之潘</p>
-        <p>42.龍蛇藏歸輯錄</p>
+        <h3>Inazuma</h3>
+        <p>1.In Another Land</p>
+        <p>2.International Travel Log</p>
+        <p>3.The Gourmet Supremos: On the Road</p>
+        <p>4.The Gourmet Supremos: The Importance of Eating Well</p>
+        <p>5.Home Lies Over the Ocean</p>
+        <p>6.O Archon, Have I Done Right?</p>
+        <p>7.Battle of Revenge</p>
+        <p>8.Yae Publishing House's Invitation</p>
+        <p>9.Chisato's Letter</p>
+        <p>10.Katheryne in Inazuma</p>
+        <p>11.The Ritou Road</p>
+        <p>12.The Art of Horticulture</p>
+        <p>13.Hiromi's Watch</p>
+        <p>14."The Seventh Samurai"</p>
+        <p>15.Tatara Tales</p>
+        <p>16.Gourmet Supremos, Assemble!</p>
+        <p>17.Sakura Arborism</p>
+        <p>18.Dreams of Sword Art</p>
+        <p>19.Sacred Sakura Cleansing Ritual</p>
+        <p>20.The Farmer's Treasure</p>
+        <p>21.Orobashi's Legacy</p>
+        <p>22.Treatment on the Island</p>
+        <p>23.Gazing Three Thousand Miles Away</p>
+        <p>24.Fate of a Fighter</p>
+        <p>25.Seirai Stormchasers</p>
+        <p>26.Reminiscence of Seirai</p>
+        <p>27."Heart of Watatsumi"</p>
+        <p>28.Divine Plant of the Depths</p>
+        <p>29.The Three Great Martial Trials</p>
+        <p>30.Solitary Sea-Beast</p>
+        <p>31.Storytelling Method</p>
+        <p>32.The Narukami Trail</p>
+        <p>33.Fertilizer... Salesperson?</p>
+        <p>34.The Sun-Wheel and Mt. Kanna</p>
+        <p>35.The Saga of Mr. Forgetful</p>
+        <p>36.Clean House</p>
+        <p>37.The Subterranean Trials of Drake and Serpent</p>
+        <p>38.Lotus Eater</p>
+        <p>39.The Phaethons' Syrtos</p>
+        <p>40.Collection of Dragons and Snakes</p>
     `,
     Sumeru2: ` 
-        <h3>須彌</h3>
-        <p>1.全能美食隊．職責在內</p>
-        <p>2.代價</p>
-        <p>3.冒險就要大步向前</p>
-        <p>4.加爾恰的讚歌．相容性贈禮</p>
-        <p>5.求學漫漫路</p>
-        <p>6.趁夢想氣息逗留</p>
-        <p>7.魚鉤的物盡其用</p>
-        <p>8.獸有失蹄</p>
-        <p>9.智中之寶．新計畫</p>
-        <p>10.吉祥具書</p>
-        <p>11.直到「桓那」痊癒</p>
-        <p>12.水天供書</p>
-        <p>13.回憶終章</p>
-        <p>14.靜態風景．後篇</p>
-        <p>15.勇氣戴於心上</p>
-        <p>16.兇猛動物在哪裡</p>
-        <p>17.森林書</p>
-        <p>18.願為一炊之夢</p>
-        <p>19.愚人者人愚之</p>
-        <p>20.正法炬書</p>
-        <p>21.與珍稀之鳥的短暫邂逅</p>
-        <p>22.加入鍍金旅團，擁抱美好生活</p>
-        <p>23.沙上花</p>
-        <p>24.熱砂之夢</p>
-        <p>25.二重證據</p>
-        <p>26.阿弗拉圖之惑</p>
-        <p>27.索赫爾的心願</p>
-        <p>28.智慧築屋，鑿成七柱</p>
-        <p>29.流沙如淚的神殿</p>
-        <p>30.埋葬豐饒的沙丘</p>
-        <p>31.永恆的蔥蘢之夢</p>
-        <p>32.蒂爾．亞什特的讚歌</p>
-        <p>33.普爾比魯尼之誠</p>
+        <h3>Sumeru</h3>
+        <p>1.Gourmet Supremos: Within Our Duties</p>
+        <p>2.The Price</p>
+        <p>3.Another Horizon of Adventure</p>
+        <p>4.Garcia's Paean: A Gift of Compatibility</p>
+        <p>5.The Path of Papers</p>
+        <p>6.For a Dream I Tarry</p>
+        <p>7.Cost-Effective Hook</p>
+        <p>8.Event Beasts Stumble</p>
+        <p>9.Treasure of Wisdom: A New Plan</p>
+        <p>10.Vimana Agama</p>
+        <p>11.Until Vana is Healed</p>
+        <p>12.Memory's Final Chapter</p>
+        <p>13.Static Views</p>
+        <p>14.Courage is in the Heart</p>
+        <p>15.Where Are the Fierce Creatures?</p>
+        <p>16.Aranyaka</p>
+        <p>17.The Foolish Fatuus</p>
+        <p>18.Agnihotra Sutra</p>
+        <p>19.A Short Encounter with a Rare Bird</p>
+        <p>20.Join the Eremites and Embrace a Wonderful New Life!</p>
+        <p>21.Blooming Sands</p>
     `,
     Fontaine2: ` 
-        <h3>楓丹</h3>
-        <p>1.生日快樂</p>
-        <p>2.超越時空之空想</p>
-        <p>3.冒險就要朝著遠方</p>
-        <p>4.危機四伏的楓丹廷</p>
-        <p>5.一份通知</p>
-        <p>6.一件小事</p>
-        <p>7.一枚印章</p>
-        <p>8.泉有重噴日</p>
-        <p>9.安的故事．序章</p>
-        <p>10.西摩爾的故事．序章</p>
-        <p>11.水色朝痕</p>
-        <p>12.真是讓人垂涎欲滴！</p>
-        <p>13.孤帆幽影</p>
-        <p>14.「這才不是南瓜湯…」</p>
-        <p>15.奇石歷險記</p>
-        <p>16.釣魚遊戲</p>
-        <p>17.好事多磨</p>
-        <p>18.日冕的三原色</p>
-        <p>19.在開滿鮮花的草地上</p>
-        <p>20.一份信函</p>
-        <p>21.卡特皮拉的故事．序章</p>
-        <p>22.楓丹科學院，停滯於一片廢墟上</p>
-        <p>23.海淵封纏的乖離光</p>
-        <p>24.壞蛋們</p>
-        <p>25.通往奇點之路</p>
-        <p>26.我們的目標在另一條管道</p>
-        <p>27.往事追跡</p>
-        <p>28.智勇雙全</p>
-        <p>29.水仙的追跡</p>
-        <p>30.伊黎耶的野精靈</p>
-        <p>31.問題美露莘與答案機器人</p>
-        <p>32.無格律自由師</p>
-        <p>33.一場預期內的謊言</p>
-        <p>34.得償所願的尋寶之旅</p>
-        <p>35.曙紅即興詩</p>
-        <p>36.勒魯瓦</p>
-        <p>37.諧律上的詠敘詩</p>
-        <p>38.遲來的歸鄉</p>
-        <p>39.他的生命在那邊</p>
+        <h3>Fontaine</h3>
+        <p>1.Happy Birthday</p>
+        <p>2.Danger Lurks Everywhere in Fontaine</p>
+        <p>3.A Certain Notice</p>
+        <p>4.A Certain Trifle</p>
+        <p>5.A Certain Stamp</p>
+        <p>6.The Fountain Flows Again</p>
+        <p>7.Ann's Story</p>
+        <p>8.Aqueous Tidemarks</p>
+        <p>9.Truly Mouthwatering!</p>
+        <p>10.The Lone Phantom Sail</p>
+        <p>11."Hey, This Isn't Pumpkin Soup..."</p>
+        <p>12.Strange Stone Chronicle</p>
+        <p>13.Were It So Easy</p>
+        <p>14.Upon a Flowery Field of Grass</p>
+        <p>15.In the Wake of Narcissus</p>
+        <p>16.The Wild Fairy of Erinnyes</p>
+        <p>17.Questioning Melusine and Answering Machine</p>
+        <p>18.An Expected Lie</p>
+        <p>19.Wish-Fulfilling Treasure Hunt</p>
+        <p>20.Impromptu Poem of the Crimson Dawn</p>
     `,
 };
 
 const articles3 = {
     Mondstadt3: ` 
-        <h3>Mondstadt 5-Star Role</h3>
+        <h3>Mondstadt 5-Star Characters</h3>
         <p>Pyro：Diluc Noctua Chapter</p>
         <p>Pyro：Klee Trifolium Chapter</p>
         <p>Anemo：Jean Leo Minor Chapter</p>
@@ -430,7 +381,7 @@ const articles3 = {
         <p>Cryo：Eula Aphros Delos Chapter</p>
     `,
     Liyue3: `
-        <h3>Liyue 5-Star Role</h3>
+        <h3>Liyue 5-Star Characters</h3>
         <p>Hydro：Tartaglia Monoceros Caeli Chapter</p>
         <p>Geo：Zhongli Historia Antiqua Chapter</p>
         <p>Cryo：Ganyu Sinae Unicornis Chapter</p>
@@ -440,7 +391,7 @@ const articles3 = {
         <p>Anemo：Xianyun Grus Serena Chapter</p>
     `,
     Inazuma3: ` 
-        <h3>Inazuma 5-Star Role</h3>
+        <h3>Inazuma 5-Star Characters</h3>
         <p>Cryo：Ayaka Grus Nivis Chapter</p>
         <p>Pyro：Yoimiya Carassius Auratus Chapter</p>
         <p>Electro：Raiden Shogun Imperatrix Umbrosa Chapter</p>
@@ -451,7 +402,7 @@ const articles3 = {
         <p>Anemo：Kazuha Acer Palmatum Chapter</p>
     `,
     Sumeru3: ` 
-        <h3>Sumeru 5-Star Role</h3>
+        <h3>Sumeru 5-Star Characters</h3>
         <p>Dendro：Tighnari Vulpes Zerda Chapter</p>
         <p>Hydro：Nilou Lotos Somno Chapter</p>
         <p>Electro：Cyno Lupus Aureus Chapter</p>
@@ -460,7 +411,7 @@ const articles3 = {
         <p>Pyro：Dehya Mantichora Chapter</p>
     `,
     Fontaine3: ` 
-        <h3>Fontaine 5-Star Role</h3>
+        <h3>Fontaine 5-Star Characters</h3>
         <p>Pyro：Lyney Felis Fuscus Chapter</p>
         <p>Cryo：Wriothesley Cerberus Chapter</p>
         <p>Geo：Navia Rosa Multiflora Chapter</p>
@@ -474,38 +425,37 @@ const articles3 = {
 
 const articles4 = {
     Mondstadt4: ` 
-        <h3>Mondstadt 4-Star Role</h3>
-        <p>火系：班尼特 第一幕 美妙旅程</p>
-        <p>水系：芭芭拉 第一幕 治癒的清泉</p>
-        <p>岩系：諾艾爾 第一幕 騎士修行之道</p>
-        <p>岩系：諾艾爾 第二幕 騎士備考之道</p>
-        <p>冰系：迪奧娜 第一幕 貓與特調酒</p>
-        <p>冰系：凱亞 第一幕 鬼話與甜酒</p>
+        <h3>Mondstadt 4-Star Characters</h3>
+        <p>Pyro：Bennett Fantastic Voyage</p>
+        <p>Hydro：Barbara Wellspring of Healing</p>
+        <p>Geo：Noelle Chivalric Training</p>
+        <p>Cryo：Diona The Cat and the Cocktail</p>
+        <p>Cryo：Kaeya Shenanigans and Sweet Wine</p>
     `,
     Liyue4: `
-        <h3>Liyue 4-Star Role</h3>
-        <p>冰系：重雲 第一幕 尋妖覓邪記</p>
-        <p>岩系：雲堇 第一幕 弦歌知雅意</p>
-        <p>岩系：凝光 第一幕 玉閣歸客至</p>
+        <h3>Liyue 4-Star Characters</h3>
+        <p>Cryo：Chongyun Signs of Evil</p>
+        <p>Geo：Yun Jin A Song That Knows Grace</p>
+        <p>Geo：Ningguang The Jade Chamber's Returning Guest</p>
     `,
     Inazuma4: ` 
-        <h3>Inazuma 4-Star Role</h3>
-        <p>火系：托馬 第一幕 家政官的日常工作</p>
-        <p>風系：早柚 第一幕 嗚呼流．生長之術</p>
-        <p>雷系：北斗 第一幕 南十字閃耀時</p>
-        <p>岩系：五郎 第一幕 犬大將的特別行動</p>
-        <p>雷系：九岐忍 第一幕 幫派的日常事務</p>
-        <p>風系：鹿野院平藏 第一幕 風暴捕物帳</p>
+        <h3>Inazuma 4-Star Characters</h3>
+        <p>Pyro：Thoma A Housekeeper's Daily Chores</p>
+        <p>Anemo：Sayu Yoohoo Art: Seichou no Jutsu</p>
+        <p>Electro：Beidou When the Crux Shines Bright</p>
+        <p>Geo：Gorou The Canine General's Special Operations</p>
+        <p>Electro：Kuki Shinobu The Gang's Daily Deeds</p>
+        <p>Anemo：Shikanoin Heizou Trap 'Em by Storm</p>
     `,
     Sumeru4: ` 
-        <h3>Sumeru 4-Star Role</h3>
-        <p>草系：琺露珊 第一幕 難解之結</p>
-        <p>冰系：萊依拉 第一幕 星本無言</p>
-        <p>草系：卡維 第一幕 苦與幸的鐘擺</p>
+        <h3>Sumeru 4-Star Characters</h3>
+        <p>Dendro：Faruzan A Confounding Conundrum</p>
+        <p>Cryo：Layla Ever Silent Stars</p>
+        <p>Dendro：Kaveh The Pendulum of Weal and Woe</p>
     `,
     Fontaine4: ` 
-        <h3>Fontaine 4-Star Role</h3>
-        <p>風系：琳尼特 第一幕 貓與隨機數</p>
+        <h3>Fontaine 4-Star Characters</h3>
+        <p>Anemo：Lynette Checks & Cats</p>
     `,
 };
 
@@ -677,15 +627,14 @@ document.getElementById('Role').addEventListener('click', function() { /*點擊�
 
     Klee.addEventListener('mouseover', function() {
         RoleNameText1.style.display = 'block';
-        RoleNameText1.innerText = '可莉'; 
+        RoleNameText1.innerText = 'KL'; 
         RoleNameText1.style.top = Klee.offsetTop - RoleNameText1.offsetHeight - 10 + 'px'; // 调整文字方块的位置，向上偏移10px
-        RoleNameText1.style.left = Klee.offsetLeft + RoleNameText1.offsetWidth + 10 + 'px';
+        RoleNameText1.style.left = Klee.offsetLeft + RoleNameText1.offsetWidth + 20 + 'px';
         RoleNameText2.style.display = 'none';
         RoleNameText3.style.display = 'none';
         RoleNameText4.style.display = 'none';
         RoleNameText5.style.display = 'none';
         RoleNameText6.style.display = 'none';
-        
     });
     Klee.addEventListener('mouseout', function() {
         RoleNameText1.style.display = 'none';
@@ -700,9 +649,9 @@ document.getElementById('Role').addEventListener('click', function() { /*點擊�
     });
     Kokomi.addEventListener('mouseover', function() {
         RoleNameText2.style.display = 'block';
-        RoleNameText2.innerText = '心海'; 
+        RoleNameText2.innerText = 'XH'; 
         RoleNameText2.style.top = Kokomi.offsetTop - RoleNameText2.offsetHeight - 10 + 'px'; // 调整文字方块的位置，向上偏移10px
-        RoleNameText2.style.left = Kokomi.offsetLeft + RoleNameText2.offsetWidth + 10 + 'px';
+        RoleNameText2.style.left = Kokomi.offsetLeft + RoleNameText2.offsetWidth + 20 + 'px';
         RoleNameText1.style.display = 'none';
         RoleNameText3.style.display = 'none';
         RoleNameText4.style.display = 'none';
@@ -722,9 +671,9 @@ document.getElementById('Role').addEventListener('click', function() { /*點擊�
     });
     Hutao.addEventListener('mouseover', function() {
         RoleNameText3.style.display = 'block';
-        RoleNameText3.innerText = '胡桃'; 
+        RoleNameText3.innerText = 'HT'; 
         RoleNameText3.style.top = Hutao.offsetTop - RoleNameText3.offsetHeight - 10 + 'px'; // 调整文字方块的位置，向上偏移10px
-        RoleNameText3.style.left = Hutao.offsetLeft + RoleNameText3.offsetWidth + 10 + 'px';
+        RoleNameText3.style.left = Hutao.offsetLeft + RoleNameText3.offsetWidth + 20 + 'px';
         RoleNameText1.style.display = 'none';
         RoleNameText2.style.display = 'none';
         RoleNameText4.style.display = 'none';
@@ -744,9 +693,9 @@ document.getElementById('Role').addEventListener('click', function() { /*點擊�
     });
     Alhaitham.addEventListener('mouseover', function() {
         RoleNameText4.style.display = 'block';
-        RoleNameText4.innerText = '海森'; 
+        RoleNameText4.innerText = 'HT'; 
         RoleNameText4.style.top = Alhaitham.offsetTop - RoleNameText4.offsetHeight - 10 + 'px'; // 调整文字方块的位置，向上偏移10px
-        RoleNameText4.style.left = Alhaitham.offsetLeft + RoleNameText4.offsetWidth + 10 + 'px';
+        RoleNameText4.style.left = Alhaitham.offsetLeft + RoleNameText4.offsetWidth + 20 + 'px';
         RoleNameText1.style.display = 'none';
         RoleNameText2.style.display = 'none';
         RoleNameText3.style.display = 'none';
@@ -766,9 +715,9 @@ document.getElementById('Role').addEventListener('click', function() { /*點擊�
     });
     Neuvillette.addEventListener('mouseover', function() {
         RoleNameText5.style.display = 'block';
-        RoleNameText5.innerText = '那維'; 
+        RoleNameText5.innerText = 'NV'; 
         RoleNameText5.style.top = Neuvillette.offsetTop - RoleNameText5.offsetHeight - 10 + 'px'; // 调整文字方块的位置，向上偏移10px
-        RoleNameText5.style.left = Neuvillette.offsetLeft + RoleNameText5.offsetWidth + 10 + 'px';
+        RoleNameText5.style.left = Neuvillette.offsetLeft + RoleNameText5.offsetWidth + 20 + 'px';
         RoleNameText1.style.display = 'none';
         RoleNameText2.style.display = 'none';
         RoleNameText3.style.display = 'none';
@@ -788,9 +737,9 @@ document.getElementById('Role').addEventListener('click', function() { /*點擊�
     });
     Shenhe.addEventListener('mouseover', function() {
         RoleNameText6.style.display = 'block';
-        RoleNameText6.innerText = '申鶴'; 
+        RoleNameText6.innerText = 'SH'; 
         RoleNameText6.style.top = Shenhe.offsetTop - RoleNameText6.offsetHeight - 10 + 'px'; // 调整文字方块的位置，向上偏移10px
-        RoleNameText6.style.left = Shenhe.offsetLeft + RoleNameText6.offsetWidth + 10 + 'px';
+        RoleNameText6.style.left = Shenhe.offsetLeft + RoleNameText6.offsetWidth + 20 + 'px';
         RoleNameText1.style.display = 'none';
         RoleNameText2.style.display = 'none';
         RoleNameText3.style.display = 'none';
