@@ -12,8 +12,8 @@ A static website made with pure HTML, CSS and JavaScript, showing the game intro
   - **Background and Imagery**(::before)
   - **Typography and Color Scheme**(used centered alignment)
 - JavaScript
-  - DOM Manipulation(getElementById, addEventListener, innerHTML, style.display, style.top/left)
-  - Event Handling(click, change, mousemove, mouseover / mouseout)
-  - Dropdown & Dynamic Image Display
-  - Conditional Display
-  - Navigation(window.location.href)
+  - **DOM Manipulation**(getElementById, addEventListener, innerHTML, style.display, style.top/left)
+  - **Event Handling**(click, change, mousemove, mouseover / mouseout)
+  - **Dropdown & Dynamic Image Display**
+  - **Conditional Display**
+  - **Navigation**(window.location.href)
