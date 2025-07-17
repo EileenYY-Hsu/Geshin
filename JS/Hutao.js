@@ -56,6 +56,6 @@ window.onload = function() {
 
     homeLink.addEventListener('click', function() {
         // 將用戶重定向到指定的網頁
-        window.location.href = 'Main.html'; // 將網址替換為你想要跳轉的網頁地址
+        window.location.href = '../Main.html'; // 將網址替換為你想要跳轉的網頁地址
     });
 };

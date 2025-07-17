@@ -124,19 +124,19 @@ const LotteryContent = `
             <tr>
                 <td>
                     <select id="selection" onchange="showSelectedImage()">
-                        <option value="10up.png">1.0</option>
-                        <option value="11up.png">1.1</option>
-                        <option value="12up.png">1.2</option>
-                        <option value="13up.png">1.3</option>
-                        <option value="14up.jpeg">1.4</option>
-                        <option value="15up.png">1.5</option>
-                        <option value="16up.png">1.6</option>
-                        <option value="20up.png">2.0</option>
-                        <option value="21up.png">2.1</option>
-                        <option value="22up.png">2.2</option>
+                        <option value="images/10up.png">1.0</option>
+                        <option value="images/11up.png">1.1</option>
+                        <option value="images/12up.png">1.2</option>
+                        <option value="images/13up.png">1.3</option>
+                        <option value="images/14up.jpeg">1.4</option>
+                        <option value="images/15up.png">1.5</option>
+                        <option value="images/16up.png">1.6</option>
+                        <option value="images/20up.png">2.0</option>
+                        <option value="images/21up.png">2.1</option>
+                        <option value="images/22up.png">2.2</option>
                     </select>
                 </td>
-                <td id="tablerightdown"><img id="selectedImage" class="selectedImage" src="10up.png" alt="Selected Image"></td>
+                <td id="tablerightdown"><img id="selectedImage" class="selectedImage" src="images/10up.png" alt="Selected Image"></td>
             </tr>
         </table>
     </div>
@@ -144,7 +144,7 @@ const LotteryContent = `
 
 const MapContent = `
     <div class="MChapterDown">
-        <img id="selectedImage2" class="selectedImage" src="map.png" alt="Selected Image">
+        <img id="selectedImage2" class="selectedImage" src="images/map.png" alt="Selected Image">
         <div id="areaText">
             <div id="areaText1" class="imageText"></div>
             <div id="areaText2" class="imageText"></div>
@@ -166,12 +166,12 @@ const RoleContent = `
             <div id="RoleNameText6" class="RoleNameText"></div>
         </div>
         <div id="Image">
-            <img id="Kokomi" src="珊瑚宮心海.png">
-            <img id="Hutao" src="胡桃.png">
-            <img id="Alhaitham" src="艾爾海森.png">
-            <img id="Neuvillette" src="那維萊特.jpg">
-            <img id="Klee" src="可莉.png">
-            <img id="Shenhe" src="申鶴.jpg">
+            <img id="Kokomi" src="images/珊瑚宮心海.png">
+            <img id="Hutao" src="images/胡桃.png">
+            <img id="Alhaitham" src="images/艾爾海森.png">
+            <img id="Neuvillette" src="images/那維萊特.jpg">
+            <img id="Klee" src="images/可莉.png">
+            <img id="Shenhe" src="images/申鶴.jpg">
         </div>
     </div>
 `;
@@ -645,7 +645,7 @@ document.getElementById('Role').addEventListener('click', function() { /*點擊�
         RoleNameText6.style.display = 'none';
     });
     Klee.addEventListener('click', function() { /*點擊跳轉至Klee.html */
-        window.location.href = 'Klee.html'; 
+        window.location.href = '../roles/Klee.html'; 
     });
     Kokomi.addEventListener('mouseover', function() {
         RoleNameText2.style.display = 'block';
@@ -667,7 +667,7 @@ document.getElementById('Role').addEventListener('click', function() { /*點擊�
         RoleNameText6.style.display = 'none';
     });
     Kokomi.addEventListener('click', function() { /*點擊跳轉至Kokomi.html */
-        window.location.href = 'Kokomi.html'; 
+        window.location.href = '../roles/Kokomi.html'; 
     });
     Hutao.addEventListener('mouseover', function() {
         RoleNameText3.style.display = 'block';
@@ -689,7 +689,7 @@ document.getElementById('Role').addEventListener('click', function() { /*點擊�
         RoleNameText6.style.display = 'none';
     });
     Hutao.addEventListener('click', function() { /*點擊跳轉至Hutao.html */
-        window.location.href = 'Hutao.html'; 
+        window.location.href = '../roles/Hutao.html'; 
     });
     Alhaitham.addEventListener('mouseover', function() {
         RoleNameText4.style.display = 'block';
@@ -711,7 +711,7 @@ document.getElementById('Role').addEventListener('click', function() { /*點擊�
         RoleNameText6.style.display = 'none';
     });
     Alhaitham.addEventListener('click', function() { /*點擊跳轉至Alhaitham.html */
-        window.location.href = 'Alhaitham.html'; 
+        window.location.href = '../roles/Alhaitham.html'; 
     });
     Neuvillette.addEventListener('mouseover', function() {
         RoleNameText5.style.display = 'block';
@@ -733,7 +733,7 @@ document.getElementById('Role').addEventListener('click', function() { /*點擊�
         RoleNameText6.style.display = 'none';
     });
     Neuvillette.addEventListener('click', function() { /*點擊跳轉至Neuvillette.html */
-        window.location.href = 'Neuvillette.html'; 
+        window.location.href = '../roles/Neuvillette.html'; 
     });
     Shenhe.addEventListener('mouseover', function() {
         RoleNameText6.style.display = 'block';
@@ -755,6 +755,6 @@ document.getElementById('Role').addEventListener('click', function() { /*點擊�
         RoleNameText6.style.display = 'none';
     });
     Shenhe.addEventListener('click', function() { /*點擊跳轉至Shenhe.html */
-        window.location.href = 'Shenhe.html'; 
+        window.location.href = '../roles/Shenhe.html'; 
     });
 });
